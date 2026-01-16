@@ -6,20 +6,20 @@ class UserProfil:
         self.riwayat = []
 
     def regist(self):
-        print(f"Selamat {self.name}!, Anda berhasil membuat akun")
+        return f"Selamat {self.name}!, Anda berhasil membuat akun"
 
     def login(self):
-        print(f"Selamat Datang {self.name}!")
+        return f"Selamat Datang {self.name}!"
 
     def cek_data(self):
         if not self.name:
-            print("Anda belum memiliki akun, silakan membuat akun!")
+            return "Anda belum memiliki akun, silakan membuat akun!"
         else:
-            print("Telah membuat akun!")
+            return "Telah membuat akun!"
 
     def cek_riwayat(self):
         if not self.riwayat:
-            print("Belum ada riwayat apapun")
+            return "Belum ada riwayat apapun"
         else:
             for i,history in enumerate(self.riwayat, start=1):
                 print(f"{i}, {history}")
