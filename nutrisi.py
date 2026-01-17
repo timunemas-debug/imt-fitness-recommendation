@@ -90,7 +90,7 @@ class Nutrisi(BeratBadan):
         _,kategori = self.menghitungbb()
         match kategori:
             case "Normal":
-                {
+                return{
                     "Kebutuhan Kalori: ": "Defisit Kalori: -> -300 sampai -500 kkal per hari\n"
                                           "Penurunan Aman: 0,5 - 1 kg per minggu",
                     "Takaran Makro Nutrisi(Per-hari): ": "Protein(Paling Penting): 2-2,4 Gram per Kg berat badan, Contoh: Berat 70Kg, 140-168 gram protein/hari\n"
@@ -106,7 +106,7 @@ class Nutrisi(BeratBadan):
                     "Anjuran Dokter: ": "Protein: -Protein dibagi rata di setiap waktu makan, -Dianjurkan 20 - 40 g protein per makan. Karbohidrat: -Karbohidrat dikonsumsi pagi & siang, -Kurangi karbohidrat malam hari bila tidak latihan. Lemak: -Lemak tetap diperlukan untuk hormon, -Jangan kurang dari 0,5 g/kg BB"
                 }
             case "Berat Badan Berlebih":
-                {
+                return{
                     "Kebutuhan Kalori: ": "Defisit Kalori: -> -300 sampai -500 kkal per hari\n"
                                           "Penurunan Aman: 0,5 - 1 kg per minggu",
                     "Takaran Makro Nutrisi(Per-hari): ": "Protein(Paling Penting): 2-2,4 Gram per Kg berat badan, Contoh: Berat 70Kg, 140-168 gram protein/hari\n"
@@ -122,7 +122,7 @@ class Nutrisi(BeratBadan):
                     "Anjuran Dokter: ": "Protein: -Protein dibagi rata di setiap waktu makan, -Dianjurkan 20 - 40 g protein per makan. Karbohidrat: -Karbohidrat dikonsumsi pagi & siang, -Kurangi karbohidrat malam hari bila tidak latihan. Lemak: -Lemak tetap diperlukan untuk hormon, -Jangan kurang dari 0,5 g/kg BB"
                 }
             case "Obesitas":
-                {
+                return{
                     "Kebutuhan Kalori: ": "Defisit Kalori: -> -300 sampai -500 kkal per hari\n"
                                           "Penurunan Aman: 0,5 - 1 kg per minggu",
                     "Takaran Makro Nutrisi(Per-hari): ": "Protein(Paling Penting): 2-2,4 Gram per Kg berat badan, Contoh: Berat 70Kg, 140-168 gram protein/hari\n"
